@@ -1,0 +1,88 @@
+html {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Arial;
+	font-size: 0.8em;
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	color: black;
+}
+/************************************************************************************
+MENU
+*************************************************************************************/
+.sidenav {
+	background-color: #333;
+	width: 250px;
+	top: 48px;
+	height: 100%;
+	position: fixed; /* Make it stick, even on scroll */
+	overflow: auto; /* Enable scrolling if the.sidenav has too much content */
+}
+.sidenav a {
+	display: block;
+	text-align: left;
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+.sidenav .active {
+	background-color: #4CAF50;
+	color: white;
+	border-right: 1px solid #bbb;
+}
+.sidenav a:hover:not(.active) {
+	background-color: #555;
+	color: white;
+}
+.sidenav.chico b {
+	display: none;
+}
+.sidenav.chico {
+	width: 50px;
+}
+header {
+	width: 100%;
+	height: 48px;
+	background: #f5f5f5;
+	display: flex;
+	position: fixed;
+	top: 0;
+}
+.icon {
+	display: flex;
+	background-color: #ccc;
+	padding: 14px 16px;
+	justify-content: center;
+	width: 18px;
+}
+.icon a {
+	text-decoration: none;
+}
+.name {
+	margin-left: 20px;
+	width: 230px;
+	display: flex;
+	align-items: center;
+}
+.name.chico {
+	display:none;
+}
+/************************************************************************************
+ESTRUCTURA PRINCIPAL
+*************************************************************************************/
+.content {
+	margin-left: 250px;
+	padding: 48px 20px;
+}
+.content.chico {
+	margin-left: 50px;		
+}
+a:focus {
+	border: 1px solid dodgerblue;
+	outline: none;
+}
